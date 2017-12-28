@@ -5,7 +5,7 @@
 ## 使用方法：
 
     /* 引入插件 */  
-    import pageZoom from './assets/js/lib/page-zoom.js'
+    import pageZoom from './assets/js/lib/pageZoom.js'
 
     /* 定义缩放器 */  
     const resizeHandle = () => {
