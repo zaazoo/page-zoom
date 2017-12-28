@@ -6,12 +6,18 @@
  *   比如：以375px宽度的设计稿切图时，则设置width属性为375，则会根据浏览器宽度自动进行缩放
  *
  * @usage
- *  window.onload = window.onresize = () => {
- *    pageZoom({
- *      selectors: 'body', // 选择器
- *      width: 375         // 默认以375px基准进行缩放
- *    })
- *  }
+ *   //引入插件
+ *   import pageZoom from './assets/js/lib/pageZoom.js'
+ *   //定义缩放器
+ *   const resizeHandle = () => {
+ *     pageZoom({
+ *       selectors: 'body',
+ *       width    : 375
+ *     })
+ *   }
+ *   //启用缩放
+ *   window.addEventListener('load', resizeHandle, false)
+ *   window.addEventListener('resize', resizeHandle, false)
  */
 
 const pageZoom = (opt) => {
